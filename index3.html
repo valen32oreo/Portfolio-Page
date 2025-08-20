@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WhaleHouse by VALEN</title>
+  <link rel="stylesheet" href="whale.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">WhaleHouse</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+          <li><a href="#katalog" class="nav-link">Katalog Produk</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang Kami</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+      <div class="cart-icon" id="cart-icon" title="Keranjang Belanja">
+        🛒<span id="cart-count" class="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="beranda" class="section beranda-section">
+      <div class="container">
+        <h1>Selamat Datang di <span>WhaleHouse</span> by VALEN</h1>
+        <p>Fashion Kasual Modern untuk Pria dan Wanita usia 18-35 tahun. Elegan, Minimalis, dan Profesional.</p>
+        <a href="#katalog" class="btn-primary">Lihat Katalog</a>
+      </div>
+    </section>
+    <section id="katalog" class="section katalog-section">
+      <div class="container">
+        <h2>Katalog Produk</h2>
+        <div class="filters-search">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for products..."
+            aria-label="Cari produk"
+          />
+          <div class="filters">
+            <select id="filterSize" aria-label="Filter ukuran">
+              <option value="">Size</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+            <select id="filterColor" aria-label="Filter warna">
+              <option value="">Color</option>
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+              <option value="Gray">Gray</option>
+              <option value="Blue">Blue</option>
+            </select>
+            <select id="filterPrice" aria-label="Filter harga">
+              <option value="">Price</option>
+              <option value="0-199000">Rp. 0 - 199.000</option>
+              <option value="200000-399000">Rp. 200.000 - 399.000</option>
+              <option value="400000-999999">Rp. 400.000 and above</option>
+            </select>
+          </div>
+        </div>
+        <div id="productGrid" class="product-grid">
+          <!-- Products inserted by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang" class="section tentang-section">
+      <div class="container">
+        <h2>Tentang Kami</h2>
+        <p>
+          Hai! Kami <span>WhaleHouse</span>, brand fashion kasual modern yang mendukung penampilanmu dengan desain elegan, kualitas premium, 
+          dan kenyamanan tak tertandingi. Untuk pria dan wanita usia 18-35 tahun, koleksi kami hadir dengan sentuhan minimalis yang profesional, 
+          cocok untuk berbagai kesempatan—mulai dari keseharian yang santai hingga acara semi-formal.
+        </p>
+      </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Apa Kata Pelanggan <span>WhaleHouse</span>?</h2>
+                <div class="overall-rating">
+                    <div class="stars">
+                        <span class="star full">★</span>
+                        <span class="star full">★</span>
+                        <span class="star full">★</span>
+                        <span class="star full">★</span>
+                        <span class="star half">★</span>
+                    </div>
+                    <p>4.7/5 dari <strong>500+</strong> ulasan</p>
+                </div>
+            </div>
+
+            <div class="testimonial-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <div class="stars">
+                            <span class="star full">★</span>
+                            <span class="star full">★</span>
+                            <span class="star full">★</span>
+                            <span class="star full">★</span>
+                            <span class="star full">★</span>
+                        </div>
+                        <span class="date">15 Mei 2024</span>
+                    </div>
+                    <p class="testimonial-text">"Bahan nyaman dan desainnya minimalis tapi stylish. Pas banget buat kerja atau hangout!"</p>
+                    <div class="user-info">
+                        <span class="user-name">Reno</span>
+                        <span class="user-age">25 tahun</span>
+                        <span class="user-location">Jakarta</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <div class="stars">
+                            <span class="star full">★</span>
+                            <span class="star full">★</span>
+                            <span class="star full">★</span>
+                            <span class="star full">★</span>
+                            <span class="star empty">★</span>
+                        </div>
+                        <span class="date">10 Mei 2024</span>
+                    </div>
+                    <p class="testimonial-text">"Pelayanannya ramah banget! Packing rapi dan barang sesuai gambar."</p>
+                    <div class="user-info">
+                        <span class="user-name">Adi</span>
+                        <span class="user-age">30 tahun</span>
+                        <span class="user-location">Bandung</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <div class="stars">
+                            <span class="star full">★</span>
+                            <span class="star full">★</span>
+                            <span class="star full">★</span>
+                            <span class="star half">★</span>
+                            <span class="star empty">★</span>
+                        </div>
+                        <span class="date">5 Mei 2024</span>
+                    </div>
+                    <p class="testimonial-text">"Udah beli 3 kali di WhaleHouse, konsisten kualitasnya. Favorite brand!"</p>
+                    <div class="user-info">
+                        <span class="user-name">Mira</span>
+                        <span class="user-age">22 tahun</span>
+                        <span class="user-location">Surabaya</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all">
+                <button class="view-all-btn">Lihat Semua Ulasan</button>
+            </div>
+        </div>
+    </section>
+    <section id="kontak" class="section kontak-section">
+      <div class="container">
+        <h2>Kontak Kami</h2>
+        <div class="social-media">
+            <a href="https://instagram.com/valenkrsss_" class="social-icon instagram" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+           </svg>
+          </a>
+        </div>
+        <form id="contactForm" aria-label="Form kontak">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Pesan:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn-primary">Kirim Pesan</button>
+        </form>
+        <div id="contactMessage" class="contact-message" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cartSidebar" class="cart-sidebar" aria-label="Keranjang belanja" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Keranjang Belanja</h3>
+      <button id="closeCartBtn" aria-label="Tutup keranjang">&times;</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <p>Keranjang kosong.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        Total: <span id="cartTotal">Rp. 0</span>
+      </div>
+      <button id="checkoutBtn" class="btn-primary" disabled>Checkout</button>
+    </div>
+  </aside>
+
+  <script>
+    const products = [
+      {
+        id: 1,
+        name: "Kaos Putih Basic",
+        price: 149000,
+        size: ["S", "M", "L", "XL"],
+        color: "White",
+        image: "img/Pocoyo.jpeg",
+      },
+      {
+        id: 2,
+        name: "Kemeja Hitam Slim Fit",
+        price: 349000,
+        size: ["M", "L", "XL"],
+        color: "Black",
+        image: "img/Pocoyo.jpeg",
+      },
+      {
+        id: 3,
+        name: "Hoodie Abu-abu",
+        price: 399000,
+        size: ["S", "M", "L"],
+        color: "Gray",
+        image: "img/Pocoyo.jpeg",
+      },
+      {
+        id: 4,
+        name: "T-shirt Biru Navy",
+        price: 179000,
+        size: ["S", "M", "L", "XL"],
+        color: "Blue",
+        image: "img/Pocoyo.jpeg",
+      },
+      {
+        id: 5,
+        name: "Jaket Hitam Kasual",
+        price: 449000,
+        size: ["M", "L", "XL"],
+        color: "Black",
+        image: "img/Pocoyo.jpeg",
+      },
+      {
+        id: 6,
+        name: "Kaos Abu-abu Minimalis",
+        price: 199000,
+        size: ["S", "M", "L", "XL"],
+        color: "Gray",
+        image: "img/Pocoyo.jpeg",
+      },
+      {
+        id: 7,
+        name: "Kaos Abu-abu Minimalis",
+        price: 199000,
+        size: ["S", "M", "L", "XL"],
+        color: "Gray",
+        image: "img/Pocoyo.jpeg",
+      },
+      {
+        id: 8,
+        name: "Kaos Abu-abu Minimalis",
+        price: 199000,
+        size: ["S", "M", "L", "XL"],
+        color: "Gray",
+        image: "img/Pocoyo.jpeg",
+      }
+    ];
+
+    const cart = [];
+    const cartCountElem = document.getElementById("cart-count");
+    const cartSidebar = document.getElementById("cartSidebar");
+    const cartItemsElem = document.getElementById("cartItems");
+    const cartTotalElem = document.getElementById("cartTotal");
+    const checkoutBtn = document.getElementById("checkoutBtn");
+    const closeCartBtn = document.getElementById("closeCartBtn");
+    const cartIcon = document.getElementById("cart-icon");
+
+    function formatPrice(price) {
+      return "Rp. " + price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    }
+
+    function renderProducts(filter = {}) {
+      const grid = document.getElementById("productGrid");
+      grid.innerHTML = "";
+      let filtered = products;
+
+      // Filter by search
+      if (filter.search && filter.search.trim() !== "") {
+        const searchTerm = filter.search.toLowerCase();
+        filtered = filtered.filter((p) => p.name.toLowerCase().includes(searchTerm));
+      }
+
+      // Filter by size
+      if (filter.size && filter.size !== "") {
+        filtered = filtered.filter((p) => p.size.includes(filter.size));
+      }
+
+      // Filter by color
+      if (filter.color && filter.color !== "") {
+        filtered = filtered.filter((p) => p.color === filter.color);
+      }
+
+      // Filter by price
+      if (filter.price && filter.price !== "") {
+        const [min, max] = filter.price.split("-").map(Number);
+        filtered = filtered.filter((p) => {
+          if (max) {
+            return p.price >= min && p.price <= max;
+          }
+          return p.price >= min;
+        });
+      }
+
+      if (filtered.length === 0) {
+        grid.innerHTML = "<p class='no-products'>Produk tidak ditemukan.</p>";
+        return;
+      }
+
+      filtered.forEach((product) => {
+        const card = document.createElement("div");
+        card.className = "product-card";
+        card.innerHTML = `
+          <img src="${product.image}" alt="${product.name}" />
+          <h3>${product.name}</h3>
+          <p class="price">${formatPrice(product.price)}</p>
+          <p class="product-info">Color: ${product.color} | Size: ${product.size.join(", ")}</p>
+          <button class="btn-add-cart" data-id="${product.id}" aria-label="Tambah ${product.name} ke keranjang">Add To Cart</button>
+        `;
+        grid.appendChild(card);
+      });
+
+      // Add event listeners
+      document.querySelectorAll(".btn-add-cart").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          const id = parseInt(e.target.getAttribute("data-id"));
+          addToCart(id);
+        });
+      });
+    }
+
+    function updateCartCount() {
+      cartCountElem.textContent = cart.length;
+    }
+
+    function renderCart() {
+      cartItemsElem.innerHTML = "";
+      if (cart.length === 0) {
+        cartItemsElem.innerHTML = "<p>Keranjang kosong.</p>";
+        checkoutBtn.disabled = true;
+        cartTotalElem.textContent = formatPrice(0);
+        return;
+      }
+
+      let total = 0;
+      cart.forEach((item, idx) => {
+        total += item.price;
+        const div = document.createElement("div");
+        div.className = "cart-item";
+        div.innerHTML = `
+          <div class="cart-item-info">
+            <p>${item.name}</p>
+            <p>${formatPrice(item.price)}</p>
+          </div>
+          <button class="btn-remove-cart" data-idx="${idx}" aria-label="Hapus ${item.name} dari keranjang">&times;</button>
+        `;
+        cartItemsElem.appendChild(div);
+      });
+
+      cartTotalElem.textContent = formatPrice(total);
+      checkoutBtn.disabled = false;
+
+      document.querySelectorAll(".btn-remove-cart").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          const idx = parseInt(e.target.getAttribute("data-idx"));
+          cart.splice(idx, 1);
+          updateCartCount();
+          renderCart();
+        });
+      });
+    }
+
+    function addToCart(id) {
+      const product = products.find((p) => p.id === id);
+      if (product) {
+        cart.push(product);
+        updateCartCount();
+        renderCart();
+        showAddToCartPopup(`"${product.name}" berhasil ditambahkan ke keranjang!`);
+      }
+    }
+
+    // Event listeners for filters and search
+    const searchInput = document.getElementById("searchInput");
+    const filterSize = document.getElementById("filterSize");
+    const filterColor = document.getElementById("filterColor");
+    const filterPrice = document.getElementById("filterPrice");
+
+    function getFilters() {
+      return {
+        search: searchInput.value,
+        size: filterSize.value,
+        color: filterColor.value,
+        price: filterPrice.value,
+      };
+    }
+
+    [searchInput, filterSize, filterColor, filterPrice].forEach((elem) => {
+      elem.addEventListener("input", () => {
+        renderProducts(getFilters());
+      });
+    });
+
+    // Cart sidebar toggle
+    cartIcon.addEventListener("click", () => {
+      const isHidden = cartSidebar.getAttribute("aria-hidden") === "true";
+      cartSidebar.setAttribute("aria-hidden", !isHidden);
+      if (!isHidden) {
+        cartSidebar.style.transform = "translateX(100%)";
+      } else {
+        cartSidebar.style.transform = "translateX(0)";
+      }
+    });
+
+    closeCartBtn.addEventListener("click", () => {
+      cartSidebar.setAttribute("aria-hidden", "true");
+      cartSidebar.style.transform = "translateX(100%)";
+    });
+
+    // Contact form submit
+    const contactForm = document.getElementById("contactForm");
+    const contactMessage = document.getElementById("contactMessage");
+
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      contactMessage.textContent = "";
+      const name = contactForm.name.value.trim();
+      const email = contactForm.email.value.trim();
+      const message = contactForm.message.value.trim();
+
+      if (!name || !email || !message) {
+        contactMessage.textContent = "Harap isi semua bidang.";
+        contactMessage.style.color = "red";
+        return;
+      }
+
+      // Simulate form submission
+      contactMessage.textContent = "Pesan berhasil dikirim. Terima kasih!";
+      contactMessage.style.color = "green";
+
+      contactForm.reset();
+    });
+
+    // Highlight active navigation link on scroll
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 70;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").substring(1) === current) {
+          link.classList.add("active");
+        }
+      });
+    });
+
+    // Initialize
+    renderProducts();
+    renderCart();
+  </script>
+  <script src="whale.js"></script>
+  <div id="popupAddCart" class="popup-add-cart" role="alert" aria-live="polite"></div>
+</body>
+</html>
+
