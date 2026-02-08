@@ -475,12 +475,12 @@ button::after {
 
 button::before {
   left: -10px;
-  background: #240046;
+  background: #B3D1FF;
 }
 
 button::after {
   right: -10px;
-  background: #5a189a;
+  background: #AFFFB0;
 }
 
 button:hover::before,
@@ -490,14 +490,14 @@ button:hover::after {
 
 /* Text */
 button span {
-  color: #03045e;
+  color: #000000;
   font-size: 18px;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 button:hover span {
-  color: #e0aaff;
+  color: #ffffff;
 }
 /* End */
 
