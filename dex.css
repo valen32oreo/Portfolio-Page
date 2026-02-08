@@ -445,7 +445,6 @@ section h2 {
   width: 150px;
   height: 50px;
   border-radius: 10px;
-  border: 1px solid #03045e;
   position: relative;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
@@ -470,12 +469,12 @@ section h2 {
 
 .ryzcle-link-btn::before {
   left: -10px;
-  background: #240046;
+  background: #B3D1FF;
 }
 
 .ryzcle-link-btn::after {
   right: -10px;
-  background: #5a189a;
+  background: #AFFFB0;
 }
 
 .ryzcle-link-btn:hover::before,
