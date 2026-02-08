@@ -490,14 +490,14 @@ section h2 {
 }
 
 .ryzcle-link-btn span {
-  color: #03045e;
+  color: #000000;
   font-size: 18px;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .ryzcle-link-btn:hover span {
-  color: #e0aaff;
+  color: #ffffff;
 }
 /* End */
 
