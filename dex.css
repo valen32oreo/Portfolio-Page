@@ -438,13 +438,7 @@ section h2 {
 }
 
 /* Ryzcle Corp Button */
-.ryzcle-btn {
-  display: flex;
-  justify-content: center; 
-  margin-top: 40px;
-}
-
-button {
+.ryzcle-link-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -452,17 +446,18 @@ button {
   height: 50px;
   border-radius: 10px;
   border: 1px solid #03045e;
-  position: relative; 
+  position: relative;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   z-index: 1;
   background: transparent;
+  text-decoration: none;
   cursor: pointer;
 }
 
-/* Background animation */
-button::before,
-button::after {
+/* background animation */
+.ryzcle-link-btn::before,
+.ryzcle-link-btn::after {
   content: '';
   position: absolute;
   top: 0;
@@ -473,31 +468,30 @@ button::after {
   z-index: -1;
 }
 
-button::before {
+.ryzcle-link-btn::before {
   left: -10px;
-  background: #B3D1FF;
+  background: #240046;
 }
 
-button::after {
+.ryzcle-link-btn::after {
   right: -10px;
-  background: #AFFFB0;
+  background: #5a189a;
 }
 
-button:hover::before,
-button:hover::after {
+.ryzcle-link-btn:hover::before,
+.ryzcle-link-btn:hover::after {
   width: 58%;
 }
 
-/* Text */
-button span {
-  color: #000000;
+.ryzcle-link-btn span {
+  color: #03045e;
   font-size: 18px;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
-button:hover span {
-  color: #ffffff;
+.ryzcle-link-btn:hover span {
+  color: #e0aaff;
 }
 /* End */
 
