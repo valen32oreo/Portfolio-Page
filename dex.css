@@ -302,59 +302,139 @@ section h2 {
 }
 /* End Portfolio Card */
 
-/* Language */
-.language-grid {
+/* RYZCLE SECTION */
+#ryzcle {
+  padding: 90px 16px;
+  background: transparent; 
+}
+
+/* HEADER */
+.ryzcle-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 70px;
+}
+
+.ryzcle-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+.ryzcle-title {
+  margin-top: 16px;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 700;
+  color: #111827;
+}
+
+/* CARDS LAYOUT */
+.ryzcle-cards {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 40px;
 }
 
-.language-card {
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+/* CARD */
+.ryzcle-card {
+  background: #ffffff;
+  border-radius: 40px;
+  padding: clamp(28px, 4vw, 52px);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+  transition: all 0.35s ease;
 }
 
-.language-card:hover {
-  transform: translateY(-5px);
+.ryzcle-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.09);
 }
 
-/* Bendera + Nama Bahasa */
-.language-header {
+/* LOGO ROW (SELALU SEJAJAR) */
+.ryzcle-logo-row {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #c0c0c0; /* garis bawah */
+  justify-content: center;
+  gap: clamp(20px, 4vw, 40px);
+  margin-bottom: 36px;
+  flex-wrap: nowrap;
 }
 
-.flag-icon {
-  height: 32px;         /* Tetapkan tinggi tetap */
-  width: auto;          /* Lebar otomatis agar proporsional */
-  border-radius: 6px;
-  object-fit: cover;    /* Jika kamu ingin crop konsisten */
+.ryzcle-icon {
+  height: clamp(42px, 6vw, 64px);
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
-.language-header h3 {
-  font-size: 20px;
-  color: #333;
-  margin: 0;
+.ryzcle-wordmark {
+  height: clamp(42px, 6vw, 64px);
+  max-width: 70%;
+  object-fit: contain;
 }
 
-.language-level {
-  font-size: 14px;
-  color: #555;
-  font-weight: bold;
-  margin-bottom: 6px;
+.ryzcle-divider {
+  width: 1px;
+  height: clamp(42px, 6vw, 56px);
+  background: #d1d5db;
+  flex-shrink: 0;
 }
 
-.language-desc {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.5;
+/* DESCRIPTION */
+.ryzcle-desc {
+  text-align: center;
+  font-size: clamp(14px, 2vw, 16px);
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+/* TABLET (<= 900px) */
+@media (max-width: 900px) {
+  .ryzcle-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+/* MOBILE (SEMUA HANDPHONE) */
+@media (max-width: 600px) {
+  #ryzcle {
+    padding: 70px 14px;
+  }
+
+  .ryzcle-cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .ryzcle-card {
+    border-radius: 24px;
+    padding: 26px 20px;
+  }
+
+  /* LOGO TETAP SEJAJAR DI MOBILE */
+  .ryzcle-logo-row {
+    gap: 16px;
+  }
+
+  .ryzcle-icon {
+    height: 38px;
+  }
+
+  .ryzcle-wordmark {
+    height: 38px;
+    max-width: 65%;
+  }
+
+  .ryzcle-divider {
+    height: 34px;
+  }
+
+  .ryzcle-desc {
+    font-size: 14px;
+  }
 }
 
 .profile-pic {
