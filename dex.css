@@ -440,11 +440,10 @@ section h2 {
 /* Ryzcle Corp Button */
 .ryzcle-btn {
   display: flex;
-  justify-content: center; /* ⬅️ center horizontal */
+  justify-content: center; 
   margin-top: 40px;
 }
 
-/* From Uiverse.io by Ali-Tahmazi99 */
 button {
   display: inline-flex;
   align-items: center;
@@ -453,7 +452,7 @@ button {
   height: 50px;
   border-radius: 10px;
   border: 1px solid #03045e;
-  position: relative; /* ⬅️ wajib untuk ::before & ::after */
+  position: relative; 
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   z-index: 1;
