@@ -443,6 +443,7 @@ section h2 {
   align-items: center;
   justify-content: center;
   width: 150px;
+  margin-top: 30px;
   height: 50px;
   border-radius: 10px;
   position: relative;
