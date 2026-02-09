@@ -315,13 +315,6 @@ section h2 {
   margin: 0 auto 70px;
 }
 
-.ryzcle-label {
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #9ca3af;
-}
-
 .ryzcle-title {
   margin-top: 16px;
   font-size: clamp(28px, 5vw, 42px);
