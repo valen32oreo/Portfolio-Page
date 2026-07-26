@@ -47,15 +47,16 @@ header {
   position: relative;
 }
 
+/* Gambar Asli - Diperbesar untuk Desktop */
 header .profile-pic {
-  max-width: 320px;
-  width: 100%;
+  max-width: 650px; /* Ukuran besar di desktop */
+  width: 90%;
   height: auto;
   object-fit: contain;
   border-radius: 0;
   border: none;
   box-shadow: none;
-  margin: 0 auto 24px;
+  margin: 0 auto 28px;
   display: block;
 }
 
@@ -220,9 +221,14 @@ footer p {
     margin: -60px 15px 60px;
     padding: 30px 20px 40px;
   }
+  
+  /* Ukuran Gambar di HP - Diperbesar & Proporsional */
   header .profile-pic {
-    max-width: 220px;
+    max-width: 380px; /* Ukuran agak besar di layar HP */
+    width: 95%;
+    margin-bottom: 20px;
   }
+  
   .nav-links {
     flex-direction: row;
     gap: 20px;
