@@ -703,28 +703,6 @@ footer {
   flex-wrap: wrap;
 }
 
-/* RYZCLE */
-.footer-content-rz {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 100px;
-}
-
-.nav-ryzcle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.logoR {
-  width: 150px;
-  height: 100px;
-  object-fit: contain;
-}
-
 /* BANNER COVER CORP STYLING */
 .ryzcle-banner-wrapper {
   width: 100%;
