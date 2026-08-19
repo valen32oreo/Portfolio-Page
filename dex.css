@@ -134,6 +134,47 @@ nav a:focus {
   to {opacity:1; transform: translateY(0);}
 }
 
+/* --- FITUR LOAD MORE --- */
+.cert-item {
+  display: none; /* Sembunyikan semua gambar secara default */
+}
+
+/* Tampilkan 4 sertifikat pertama (Anda bisa ubah angka 4 sesuai keinginan) */
+.cert-item:nth-child(-n+4) {
+  display: block; 
+}
+
+/* Desain Tombol Load More (Menyesuaikan tema web Anda) */
+.load-more-btn {
+  display: block;
+  margin: 30px auto 10px;
+  padding: 12px 24px;
+  background: linear-gradient(90deg, #cce7ff, #5654ff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.load-more-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+
+/* --- TAMPILAN KANAN-KIRI DI MOBILE --- */
+@media (max-width: 600px) {
+  #cert-grid {
+    display: grid;
+    /* Menimpa minmax 250px menjadi paksa 2 kolom sejajar */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 12px; /* Dikecilkan sedikit agar gambar tidak terlalu terhimpit */
+  }
+}
+
 /* Grid Layout */
 .grid {
   display: grid;
