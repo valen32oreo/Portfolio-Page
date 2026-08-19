@@ -8,17 +8,17 @@ function openTab(evt, tabId) {
   evt.currentTarget.classList.add("active");
 }
 
-// Jumlah sertifikat awal yang tampil (harus sama dengan CSS nth-child)
-let currentCerts = 4; 
+let currentCerts = window.innerWidth <= 600 ? 4 : 6; 
 
 function loadMoreCerts() {
   const certs = document.querySelectorAll('.cert-item');
   const maxCerts = certs.length;
   
-  // Jumlah sertifikat baru yang akan dimunculkan setiap kali klik
-  let nextCerts = currentCerts + 4; 
+  // Tentukan jumlah tambahan saat tombol diklik (Load 4 untuk mobile, 6 untuk desktop/tablet)
+  let loadStep = window.innerWidth <= 600 ? 4 : 6; 
+  let nextCerts = currentCerts + loadStep; 
 
-  // Loop untuk memunculkan display gambar selanjutnya
+  // Loop untuk memunculkan gambar selanjutnya
   for (let i = currentCerts; i < nextCerts && i < maxCerts; i++) {
     certs[i].style.display = 'block';
   }

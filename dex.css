@@ -139,9 +139,18 @@ nav a:focus {
   display: none; /* Sembunyikan semua gambar secara default */
 }
 
-/* Tampilkan 4 sertifikat pertama (Anda bisa ubah angka 4 sesuai keinginan) */
-.cert-item:nth-child(-n+4) {
-  display: block; 
+/* Tampilkan 6 sertifikat pertama di Desktop & Tablet */
+@media (min-width: 601px) {
+  .cert-item:nth-child(-n+6) {
+    display: block; 
+  }
+}
+
+/* Tampilkan 4 sertifikat pertama di Mobile */
+@media (max-width: 600px) {
+  .cert-item:nth-child(-n+4) {
+    display: block; 
+  }
 }
 
 /* Desain Tombol Load More (Menyesuaikan tema web Anda) */
