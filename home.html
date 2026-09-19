@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Main Page</title>
+    <link rel="stylesheet" href="dex.css" />
+    <link rel="icon" type="image/png" href="img2/Logo 1-Photoroom.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header>
+  <img data-aos="zoom-in" src="img/Valen.png" alt="Krisna Valencia Hidayat" class="profile-pic" />
+  <h1 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Krisna Valencia Hidayat</h1>
+  <p data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="400" data-aos-duration="500">Founder & CEO @ Ryzcle® Corp. | Google Student Ambassador 2026 Alumnus | Full-Stack Developer | Computer Science Student</p>
+  <nav>
+    <a data-aos="zoom-in-up" data-aos-duration="500" href="#about">About</a>
+    <a data-aos="zoom-in-up" data-aos-duration="500" href="#projects">Projects</a>
+    <a data-aos="zoom-in-up" data-aos-duration="500" href="#ryzcle">Ryzcle</a>
+  </nav>
+</header>
+<main>
+  <section data-aos="zoom-in" id="about" class="about" aria-label="About Me">
+    <h2>About Me</h2>
+    <p>Hi, I'm Krisna (Valen). As the Founder & Lead Architect of Ryzcle® Corp, I bridge the gap between complex software engineering and real business value.
+      I specialize in building scalable web ecosystems and high-precision digital solutions from Laravel-based platforms to cross-platform mobile apps. Driven by a passion for performance and user-centric design, I help businesses turn concepts into impactful digital experiences. Let's build something great.</p>
+    <div class="portfolio-card">
+      <img src="img/Portfolio Card.png" alt="Project Preview" class="portfolio-image">
+      <div class="portfolio-content">
+        <p class="portfolio-description">
+          A visual introduction to who I am as a developer creative, passionate, and focused on building engaging digital experiences.
+        </p>
+      </div>
+    </div>
+    <a href="coding.html" target="_blank" rel="noopener noreferrer" class="learn-more">
+      <span class="circle" aria-hidden="true">
+        <span class="icon arrow"></span>
+      </span>
+      <span class="button-text">Why Coding</span>
+    </a>
+  </section>
+  <section data-aos="fade-up" data-aos-duration="500" class="skills-section">
+  <h2 class="skills-title">Portfolio Showcase</h2>
+  <!-- Tabs -->
+  <section id="portfolio" class="portfolio">
+    <div class="tabs">
+      <button class="tab-link active" onclick="openTab(event,'tech')"><strong>Tech Stack</strong></button>
+      <button class="tab-link" onclick="openTab(event,'certificates')"><strong>Certificates</strong></button>
+
+    </div>
+
+    <!-- Certificates -->
+    <div id="certificates" class="tab-content">
+      <div class="grid" id="cert-grid">
+        <img src="img/Fundamental UI UX & Apple HIG.png" alt="Certificate 1" class="cert-item">
+        <img src="img/GSAID261414.png" alt="Certificate 12" class="cert-item">
+        <img src="img/Google_for_Developers.png" alt="Certificate 13" class="cert-item">
+        <img src="img/UX Design for Effortless Interaction.png" alt="Certificate 14" class="cert-item">
+        <img src="img/Start Building RESTful API with Golang.png" alt="Certificate 15" class="cert-item">
+        <img src="img/Google_for_Education.png" alt="Certificate 11" class="cert-item">
+        <img src="img/Gemini.png" alt="Certificate 8" class="cert-item">
+        <img src="img/PERMIKOMNAS.jpg" alt="Certificate 9" class="cert-item">
+        <img src="img/Tech Talk Ramadhan.png" alt="Certificate 10" class="cert-item">
+        <img src="img/LabTracer 1.png" alt="Certificate 6" class="cert-item">
+        <img src="img/LabTracer 2.png" alt="Certificate 7" class="cert-item">
+        <img src="img/Dicoding 1.0.png" alt="Certificate 1" class="cert-item">
+        <img src="img/Dicoding 2.0.png" alt="Certificate 2" class="cert-item">
+        <img src="img/Dicoding 3.0.png" alt="Certificate 3" class="cert-item">
+        <img src="img/Dicoding 4.0.png" alt="Certificate 4" class="cert-item">
+        <img src="img/Dicoding 5.0.png" alt="Certificate 5" class="cert-item">
+      </div>
+
+      <button id="loadMoreBtn" class="load-more-btn" onclick="loadMoreCerts()">Load More</button>
+    </div>
+
+    <!-- Tech Stack (Ditambah Swift) -->
+    <div id="tech" class="tab-content active">
+      <div class="keahlian">
+        <a href="javascript:void(0)" title="Laravel"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel"></a>
+        <a href="javascript:void(0)" title="Swift"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift"></a>
+        <a href="javascript:void(0)" title="PHP"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"></a>
+        <a href="javascript:void(0)" title="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></a>
+        <a href="javascript:void(0)" title="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></a>
+        <a href="javascript:void(0)" title="C++"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"></a>
+        <a href="javascript:void(0)" title="Figma"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"></a>
+      </div>
+    </div>
+  </section>
+ 
+  <a href="https://drive.google.com/drive/folders/1Mvr2Y6h_F23WE8B96s9Qswfrge7Vsq-C" data-aos="fade-up" data-aos-duration="1000" class="ctaR">
+    <span>View Certificates</span>
+    <svg width="15px" height="10px" viewBox="0 0 13 10">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="8 1 12 5 8 9"></polyline>
+    </svg>
+  </a>
+
+  <a href="https://drive.google.com/file/d/1xHXU7J0Ea5oYBvE60TKczILp5XPvTrLC/view?usp=sharing" data-aos="fade-up" data-aos-duration="1000" class="ctaR">
+    <span>Curriculum Vitae</span>
+    <svg width="15px" height="10px" viewBox="0 0 13 10">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="8 1 12 5 8 9"></polyline>
+    </svg>
+  </a>
+  </section>
+  <section id="projects" aria-label="Projects Portfolio">
+    <h2>Projects</h2>
+    <div class="projects-list">
+      <article data-aos="fade-right" data-aos-duration="500" class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive and minimal portfolio website built with HTML, CSS, and JavaScript showcasing my work and skills.</p>
+        <a href="https://github.com/valen32oreo" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </article>
+      <article data-aos="fade-left" data-aos-duration="500" class="project-card">
+        <h3>3D Illustrations — Minecraft Series</h3>
+        <p>A Minecraft-inspired visual exploration as a tribute to the game that accompanied childhood.</p>
+        <a href="mine-imator.html" target="_blank" rel="noopener noreferrer">View on Web</a>
+      </article>
+      <article data-aos="fade-right" data-aos-duration="500" class="project-card">
+        <h3>Crimson Recoil</h3>
+        <p>This is a game that I created, and it's currently still in the development stage.</p>
+        <a href="crimson-recoil.html" target="_blank" rel="noopener noreferrer">View on Web</a>
+      </article>
+      <article data-aos="fade-left" data-aos-duration="500" class="project-card">
+        <h3>Laravel Projects</h3>
+        <p>This is my Laravel projects to hone my full-stack skills.</p>
+        <a href="https://valen32oreo.github.io/Dev-Page/dokumentasi.html" target="_blank" rel="noopener noreferrer">View on Web</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="ryzcle" aria-label="Ryzcle Identity Section">
+    <!-- HEADER -->
+    <div class="ryzcle-header" data-aos="fade-up">
+      <h2 class="ryzcle-title">Founder & CEO @ Ryzcle® Corp.</h2>
+    </div>
+
+    <div class="ryzcle-banner-wrapper">
+      <img src="img2/Cover_Corp.webp" alt="Ryzcle Corp Cover Banner" class="ryzcle-banner-img">
+    </div>
+
+    <!-- CARDS -->
+    <div class="ryzcle-cards">
+
+      <!-- Ryzcle Labs -->
+      <div class="ryzcle-card" data-aos="fade-up">
+        <div class="ryzcle-logo-row">
+          <img src="img2/Logo 1-Photoroom.png" class="ryzcle-icon" alt="Ryzcle Labs">
+          <span class="ryzcle-divider"></span>
+          <img src="img2/Ryzcle Labs - Future Crafted.png" class="ryzcle-wordmark" alt="Ryzcle Labs Wordmark">
+        </div>
+
+        <p class="ryzcle-desc">
+          A research-driven division focused on exploration, prototyping,
+          and crafting innovative digital experiences.
+        </p>
+      </div>
+
+      <!-- Ryzcle Technology -->
+      <div class="ryzcle-card" data-aos="fade-up" data-aos-delay="120">
+        <div class="ryzcle-logo-row">
+          <img src="img2/Logo 2-Photoroom.png" class="ryzcle-icon" alt="Ryzcle Technology">
+          <span class="ryzcle-divider"></span>
+          <img src="img2/Ryzcle Technology - Engineering the Future.png" class="ryzcle-wordmark" alt="Ryzcle Technology Wordmark">
+        </div>
+
+        <p class="ryzcle-desc">
+          An engineering arm dedicated to building scalable, reliable,
+          and future-ready technology solutions.
+        </p>
+      </div>
+    </div>
+    <div class="ryzcle-btn" data-aos="fade-up" data-aos-delay="240">
+      <a
+        href="https://ryzcle.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="ryzcle-link-btn"
+      >
+        <span>Ryzcle® Corp.</span>
+      </a>
+    </div>
+  </section>
+</main>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="skills.js"></script>
+<script src='https://kit.fontawesome.com/9d1a8673f.js' crossorigin="anonymous"></script>
+<script>
+  AOS.init();
+</script>
+<footer>
+  <div class="footer-content">
+    <div class="nav-links">
+      <img src="img2/Logo 1-Photoroom.png" alt="Logo Ryzcle Labs" class="logo" />
+      <img src="img2/Logo 2-Photoroom.png" alt="Logo Ryzcle Technology" class="logo" />
+    </div>
+    <div class="nav-links">
+      <a href="https://valen32oreo.github.io/Dev-Page/" target="_blank">Dev Page</a>|
+      <a href="https://ryzcle.com" target="_blank">Ryzcle®</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://github.com/valen32oreo" target="_blank" aria-label="GitHub">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+      <a href="https://instagram.com/valenkrsss_" target="_blank" aria-label="Instagram">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="https://www.linkedin.com/in/krisnavalen32/" target="_blank" aria-label="LinkedIn">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+    </div>
+    <div class="footer-divider"></div>
+
+    <p class="copyright">
+      © 2026 Krisna Valencia Hidayat. All rights reserved.
+    </p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
